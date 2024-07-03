@@ -8,11 +8,11 @@ jobs:
           uses: actions/checkout@v4
         - name: install cowsay utility
           run: sudo apt-get install cowsay -y
-        - name: generate dragon ASCII
-          run: cowsay -f panda "Dragon Warrior arrived, panda is here" >> panda.txt
+        - name: generate sheep ASCII
+          run: cowsay -f sheep "soot 2l5aroof bynb7, said by the sheep :)" >> sheep.txt
         - name: validate content
-          run: grep -i "panda" panda.txt
+          run: grep -i "sheep" sheep.txt
         - name: show file content 
-          run: cat panda.txt
+          run: cat sheep.txt
         - name: list files
           run: ls -ltar
